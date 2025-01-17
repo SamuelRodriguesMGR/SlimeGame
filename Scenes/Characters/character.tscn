@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8wkmlneff7n"]
+
+[ext_resource type="Script" path="res://Scenes/Characters/character.gd" id="1_0m5cx"]
+[ext_resource type="Script" path="res://Scenes/Characters/FSM.gd" id="2_7i6jc"]
+
+[node name="Character" type="CharacterBody3D"]
+script = ExtResource("1_0m5cx")
+
+[node name="FiniteStateMachine" type="Node" parent="."]
+script = ExtResource("2_7i6jc")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.105
+billboard = 1
+alpha_cut = 1
+texture_filter = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
