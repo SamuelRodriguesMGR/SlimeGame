@@ -1,0 +1,445 @@
+[gd_scene load_steps=6 format=3 uid="uid://cy3vnx5yeysd7"]
+
+[ext_resource type="PackedScene" uid="uid://gl0cckgxtasd" path="res://Scenes/Levels/level.tscn" id="1_h8exv"]
+[ext_resource type="PackedScene" uid="uid://dgr8h34y71ucu" path="res://Scenes/Pllatforms/cube.tscn" id="2_b4a1u"]
+[ext_resource type="PackedScene" uid="uid://cm05poti5dmbm" path="res://Scenes/Envinronmet/spike.tscn" id="3_oxt8n"]
+[ext_resource type="AudioStream" uid="uid://deof4o2aiax8e" path="res://Assets/Reburn(Main).wav" id="4_6bsgb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_42vnu"]
+size = Vector3(9, 2, 1)
+
+[node name="Level10" instance=ExtResource("1_h8exv")]
+
+[node name="Hints" type="Control" parent="." index="1"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -214.0
+offset_bottom = 76.0
+grow_horizontal = 0
+scale = Vector2(1, 1.0142)
+
+[node name="Margin" type="MarginContainer" parent="Hints" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="Panel" type="Panel" parent="Hints/Margin" index="0"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Hints/Margin/Panel" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 12
+text = "Here is my final level!!!!!!!!!
+Here you will show everything
+you have learned."
+horizontal_alignment = 1
+
+[node name="Flag" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.15, 17.5, -21)
+
+[node name="CollisionShape3D" parent="Flag" index="1"]
+disabled = true
+
+[node name="Player" parent="." index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2855, 1, -1.06047)
+
+[node name="BasePlatform3" parent="LevelStructure" index="1" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(23, 0, 0, 0, 1, 0, 0, 0, 23, 27, 15.5, -20)
+
+[node name="BasePlatform2" parent="LevelStructure" index="2" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(11, 0, 0, 0, 1, 0, 0, 0, 11, 0, 1.5, 27)
+
+[node name="Cube" parent="LevelStructure/Cubes" index="0" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 8)
+
+[node name="Cube18" parent="LevelStructure/Cubes" index="1" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 2)
+
+[node name="Cube34" parent="LevelStructure/Cubes" index="2" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 2)
+
+[node name="Cube19" parent="LevelStructure/Cubes" index="3" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 7)
+
+[node name="Cube22" parent="LevelStructure/Cubes" index="4" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0.5, 7)
+
+[node name="Cube20" parent="LevelStructure/Cubes" index="5" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0.5, 7)
+
+[node name="Cube21" parent="LevelStructure/Cubes" index="6" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0.5, 7)
+
+[node name="Cube36" parent="LevelStructure/Cubes" index="7" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 1.5, 6)
+
+[node name="Cube38" parent="LevelStructure/Cubes" index="8" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 1.5, 6)
+
+[node name="Cube39" parent="LevelStructure/Cubes" index="9" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 1.5, 6)
+
+[node name="Cube40" parent="LevelStructure/Cubes" index="10" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 2.5, 5)
+
+[node name="Cube41" parent="LevelStructure/Cubes" index="11" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 2.5, 5)
+
+[node name="Cube42" parent="LevelStructure/Cubes" index="12" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 2.5, 5)
+
+[node name="Cube43" parent="LevelStructure/Cubes" index="13" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 2.5, 5)
+
+[node name="Cube44" parent="LevelStructure/Cubes" index="14" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 2.5, 5)
+
+[node name="Cube46" parent="LevelStructure/Cubes" index="15" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 3.5, 4)
+
+[node name="Cube50" parent="LevelStructure/Cubes" index="16" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 4.5, 3)
+
+[node name="Cube52" parent="LevelStructure/Cubes" index="17" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 4.5, 3)
+
+[node name="Cube55" parent="LevelStructure/Cubes" index="18" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 5.5, 2)
+
+[node name="Cube56" parent="LevelStructure/Cubes" index="19" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 5.5, 2)
+
+[node name="Cube58" parent="LevelStructure/Cubes" index="20" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 5.5, 2)
+
+[node name="Cube59" parent="LevelStructure/Cubes" index="21" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 5.5, 2)
+
+[node name="Cube62" parent="LevelStructure/Cubes" index="22" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 6.5, 1)
+
+[node name="Cube63" parent="LevelStructure/Cubes" index="23" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 6.5, 1)
+
+[node name="Cube64" parent="LevelStructure/Cubes" index="24" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 6.5, 1)
+
+[node name="Cube65" parent="LevelStructure/Cubes" index="25" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 7.5, 0)
+
+[node name="Cube66" parent="LevelStructure/Cubes" index="26" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 7.5, 0)
+
+[node name="Cube67" parent="LevelStructure/Cubes" index="27" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 7.5, 0)
+
+[node name="Cube48" parent="LevelStructure/Cubes" index="28" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 3.5, 4)
+
+[node name="Cube49" parent="LevelStructure/Cubes" index="29" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 3.5, 4)
+
+[node name="Cube68" parent="LevelStructure/Cubes" index="30" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 8.5, -1)
+
+[node name="Cube70" parent="LevelStructure/Cubes" index="31" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 8.5, -1)
+
+[node name="Cube71" parent="LevelStructure/Cubes" index="32" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 8.5, -1)
+
+[node name="Cube72" parent="LevelStructure/Cubes" index="33" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 8.5, -1)
+
+[node name="Cube75" parent="LevelStructure/Cubes" index="34" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 9.5, -2)
+
+[node name="Cube78" parent="LevelStructure/Cubes" index="35" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 10.5, -3)
+
+[node name="Cube79" parent="LevelStructure/Cubes" index="36" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 10.5, -3)
+
+[node name="Cube81" parent="LevelStructure/Cubes" index="37" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 10.5, -3)
+
+[node name="Cube82" parent="LevelStructure/Cubes" index="38" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 10.5, -3)
+
+[node name="Cube85" parent="LevelStructure/Cubes" index="39" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 11.5, -4)
+
+[node name="Cube86" parent="LevelStructure/Cubes" index="40" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 12.5, -5)
+
+[node name="Cube87" parent="LevelStructure/Cubes" index="41" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 12.5, -5)
+
+[node name="Cube89" parent="LevelStructure/Cubes" index="42" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 12.5, -5)
+
+[node name="Cube90" parent="LevelStructure/Cubes" index="43" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 12.5, -5)
+
+[node name="Cube91" parent="LevelStructure/Cubes" index="44" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 13.5, -6)
+
+[node name="Cube92" parent="LevelStructure/Cubes" index="45" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 13.5, -6)
+
+[node name="Cube94" parent="LevelStructure/Cubes" index="46" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 13.5, -6)
+
+[node name="Cube95" parent="LevelStructure/Cubes" index="47" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 13.5, -6)
+
+[node name="Cube97" parent="LevelStructure/Cubes" index="48" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 14.5, -7)
+
+[node name="Cube98" parent="LevelStructure/Cubes" index="49" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 14.5, -7)
+
+[node name="Cube99" parent="LevelStructure/Cubes" index="50" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 14.5, -7)
+
+[node name="Cube100" parent="LevelStructure/Cubes" index="51" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 14.5, -7)
+
+[node name="Cube101" parent="LevelStructure/Cubes" index="52" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 15.5, -8)
+
+[node name="Cube104G" parent="LevelStructure/Cubes" index="53" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 16.5, -9)
+
+[node name="Cube105G" parent="LevelStructure/Cubes" index="54" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 16.5, -9)
+
+[node name="Cube106G" parent="LevelStructure/Cubes" index="55" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 16.5, -31)
+
+[node name="Cube107G" parent="LevelStructure/Cubes" index="56" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 16.5, -31)
+
+[node name="Cube102" parent="LevelStructure/Cubes" index="57" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 15.5, -8)
+
+[node name="Cube103" parent="LevelStructure/Cubes" index="58" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 15.5, -8)
+
+[node name="Cube24" parent="LevelStructure/Cubes" index="59" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31, 0.5, 13)
+
+[node name="Cube25" parent="LevelStructure/Cubes" index="60" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 13)
+
+[node name="Cube26" parent="LevelStructure/Cubes" index="61" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.5, 13)
+
+[node name="Cube27" parent="LevelStructure/Cubes" index="62" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 13)
+
+[node name="Cube28" parent="LevelStructure/Cubes" index="63" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 13)
+
+[node name="Cube29" parent="LevelStructure/Cubes" index="64" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.5, 12)
+
+[node name="Cube30" parent="LevelStructure/Cubes" index="65" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0.5, 12)
+
+[node name="Cube31" parent="LevelStructure/Cubes" index="66" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.5, 12)
+
+[node name="Cube32" parent="LevelStructure/Cubes" index="67" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0.5, 12)
+
+[node name="Cube33" parent="LevelStructure/Cubes" index="68" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0.5, 12)
+
+[node name="Cube2" parent="LevelStructure/Cubes" index="69" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 10)
+
+[node name="Cube3" parent="LevelStructure/Cubes" index="70" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 13)
+
+[node name="Cube4" parent="LevelStructure/Cubes" index="71" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 19)
+
+[node name="Cube5" parent="LevelStructure/Cubes" index="72" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 19)
+
+[node name="Cube6" parent="LevelStructure/Cubes" index="73" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3.5, 36)
+
+[node name="Cube7" parent="LevelStructure/Cubes" index="74" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 5.5, 36)
+
+[node name="Cube8" parent="LevelStructure/Cubes" index="75" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 5.5, 36)
+
+[node name="Cube9" parent="LevelStructure/Cubes" index="76" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 7.5, 34)
+
+[node name="Cube10" parent="LevelStructure/Cubes" index="77" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 8.5, 34)
+
+[node name="Cube11" parent="LevelStructure/Cubes" index="78" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 10.5, 31)
+
+[node name="Cube12" parent="LevelStructure/Cubes" index="79" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 13.5, 31)
+
+[node name="Cube13" parent="LevelStructure/Cubes" index="80" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 17.5, 31)
+
+[node name="Cube14" parent="LevelStructure/Cubes" index="81" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 21.5, 31)
+
+[node name="Cube15" parent="LevelStructure/Cubes" index="82" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 25.5, 31)
+
+[node name="Cube16" parent="LevelStructure/Cubes" index="83" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(23.5856, 0.146426, 0.86951, -37.4386, 0.587282, 0.307312, -23.2825, -0.796027, 0.386667, 17.8072, 12.5, 20.6411)
+
+[node name="Cube17" parent="LevelStructure/Cubes" index="84" instance=ExtResource("2_b4a1u")]
+transform = Transform3D(23.5856, 0.146426, 0.86951, -37.4386, 0.587282, 0.307312, -23.2825, -0.796027, 0.386667, 17.8072, 12.5, 19.6411)
+
+[node name="Spike" parent="LevelStructure/Spikes" index="0" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.5, 23)
+
+[node name="Spike2" parent="LevelStructure/Spikes" index="1" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, 24)
+
+[node name="Spike3" parent="LevelStructure/Spikes" index="2" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, 24)
+
+[node name="Spike4" parent="LevelStructure/Spikes" index="3" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 25)
+
+[node name="Spike5" parent="LevelStructure/Spikes" index="4" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.5, 24)
+
+[node name="Spike6" parent="LevelStructure/Spikes" index="5" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2.5, 25)
+
+[node name="Spike7" parent="LevelStructure/Spikes" index="6" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.5, 26)
+
+[node name="Spike8" parent="LevelStructure/Spikes" index="7" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.5, 25)
+
+[node name="Spike35" parent="LevelStructure/Spikes" index="8" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.5, 27)
+
+[node name="Spike9" parent="LevelStructure/Spikes" index="9" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2.5, 27)
+
+[node name="Spike10" parent="LevelStructure/Spikes" index="10" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.5, 27)
+
+[node name="Spike11" parent="LevelStructure/Spikes" index="11" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2.5, 23)
+
+[node name="Spike12" parent="LevelStructure/Spikes" index="12" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 22)
+
+[node name="Spike13" parent="LevelStructure/Spikes" index="13" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, 24)
+
+[node name="Spike14" parent="LevelStructure/Spikes" index="14" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 24)
+
+[node name="Spike15" parent="LevelStructure/Spikes" index="15" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, 26)
+
+[node name="Spike16" parent="LevelStructure/Spikes" index="16" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.5, 28)
+
+[node name="Spike17" parent="LevelStructure/Spikes" index="17" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, 29)
+
+[node name="Spike18" parent="LevelStructure/Spikes" index="18" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 32)
+
+[node name="Spike19" parent="LevelStructure/Spikes" index="19" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.5, 32)
+
+[node name="Spike20" parent="LevelStructure/Spikes" index="20" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.5, 30)
+
+[node name="Spike21" parent="LevelStructure/Spikes" index="21" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 30)
+
+[node name="Spike36" parent="LevelStructure/Spikes" index="22" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.5, 29)
+
+[node name="Spike22" parent="LevelStructure/Spikes" index="23" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.5, 29)
+
+[node name="Spike23" parent="LevelStructure/Spikes" index="24" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, 30)
+
+[node name="Spike24" parent="LevelStructure/Spikes" index="25" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, 31)
+
+[node name="Spike25" parent="LevelStructure/Spikes" index="26" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.5, 31)
+
+[node name="Spike26" parent="LevelStructure/Spikes" index="27" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 2.5, 32)
+
+[node name="Spike27" parent="LevelStructure/Spikes" index="28" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2.5, 29)
+
+[node name="Spike28" parent="LevelStructure/Spikes" index="29" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.5, 28)
+
+[node name="Spike29" parent="LevelStructure/Spikes" index="30" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.5, 26)
+
+[node name="Spike30" parent="LevelStructure/Spikes" index="31" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 28)
+
+[node name="Spike31" parent="LevelStructure/Spikes" index="32" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 31)
+
+[node name="Spike32" parent="LevelStructure/Spikes" index="33" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 31)
+
+[node name="Spike33" parent="LevelStructure/Spikes" index="34" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2.5, 27)
+
+[node name="Spike34" parent="LevelStructure/Spikes" index="35" instance=ExtResource("3_oxt8n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2.5, 27)
+
+[node name="Label3D" type="Label3D" parent="." index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5299, 16.8751, -20.7832)
+pixel_size = 0.05
+billboard = 2
+text = "You did it!"
+
+[node name="Area3D" type="Area3D" parent="Label3D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Label3D/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_42vnu")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="9"]
+stream = ExtResource("4_6bsgb")
+
+[connection signal="body_entered" from="Label3D/Area3D" to="." method="_on_area_3d_body_entered"]
+
+[editable path="Flag"]

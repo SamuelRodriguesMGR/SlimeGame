@@ -3,21 +3,28 @@ extends Character
 
 var SLIME_SCENE : PackedScene = load("res://Scenes/Characters/Player/player.tscn")
 
+func _ready() -> void:
+	GlobalVars.counter_slimes += 1
+	
 func _add_slime():
 	var new_slime = SLIME_SCENE.instantiate()
 	get_tree().current_scene.add_child(new_slime)
-	new_slime.global_position = global_position + Vector3.UP
+	new_slime.global_position = global_position + Vector3.UP 
 	
 func get_input():
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y += JUMP_VELOCITY
-	
-	if Input.is_action_just_pressed("left_mouse"):
-		if GlobalVars.current_slime == self:
-			_add_slime()
+	if not GlobalVars.menu_is_active:
+		# Handle jump.
+		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+			velocity.y += JUMP_VELOCITY
 		
-	move_direction2d = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+		if Input.is_action_just_pressed("left_mouse"):
+			if not GlobalVars.duplicating_each_slug:
+				if GlobalVars.current_slime == self:
+					_add_slime()
+			else:
+				_add_slime()
+			
+		move_direction2d = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 
 func move():
 	super()

@@ -1,0 +1,262 @@
+[gd_scene load_steps=13 format=3 uid="uid://cnnkh0bj3sxia"]
+
+[ext_resource type="Script" path="res://Scenes/UI/main.gd" id="1_ckfg6"]
+[ext_resource type="Texture2D" uid="uid://dgehwqcycsft0" path="res://Assets/slime.png" id="2_c5m53"]
+[ext_resource type="AudioStream" uid="uid://d0i5tvq2lh5bw" path="res://Assets/FlyAsshallTheme(Cycle).wav" id="3_6s5cl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_is75n"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_td5t4"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wkot"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c42yd"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipgfb"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(128, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipogh"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(160, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tho60"]
+atlas = ExtResource("2_c5m53")
+region = Rect2(192, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q3bxs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_is75n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_td5t4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wkot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c42yd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipgfb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ipogh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tho60")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}]
+
+[sub_resource type="AudioStreamPlaylist" id="AudioStreamPlaylist_746yy"]
+stream_count = 1
+stream_0 = ExtResource("3_6s5cl")
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ckfg6")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -642.0
+offset_top = 316.0
+offset_right = 76.0
+offset_bottom = 911.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.74, 0.2146, 0.2146, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 23.0
+offset_top = 438.0
+offset_right = 366.0
+offset_bottom = 230.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.68746, 0.74, 0.2146, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 244.0
+offset_top = 100.0
+offset_right = 587.0
+offset_bottom = -108.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.68746, 0.74, 0.2146, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 168.0
+offset_top = 564.0
+offset_right = 168.0
+offset_bottom = 775.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.2146, 0.74, 0.24087, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 519.0
+offset_top = 203.0
+offset_right = 519.0
+offset_bottom = 414.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.2146, 0.74, 0.24087, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 727.0
+offset_top = 300.0
+offset_right = 727.0
+offset_bottom = 511.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.2146, 0.459787, 0.74, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect7" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 510.0
+offset_top = 571.0
+offset_right = 510.0
+offset_bottom = 782.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.523599
+color = Color(0.2146, 0.459787, 0.74, 1)
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSlime" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1028, 546)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_q3bxs")
+animation = &"jump"
+autoplay = "jump"
+flip_h = true
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSlime2" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(957, 549)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_q3bxs")
+animation = &"jump"
+autoplay = "jump"
+frame_progress = 0.810635
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSlime3" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(983, 586)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_q3bxs")
+animation = &"jump"
+autoplay = "jump"
+frame_progress = 0.810635
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSlime4" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1083, 583)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_q3bxs")
+animation = &"jump"
+autoplay = "jump"
+frame_progress = 0.810635
+flip_h = true
+metadata/_edit_lock_ = true
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 296.0
+offset_right = 362.0
+offset_bottom = 371.0
+rotation = -0.523599
+theme_override_font_sizes/font_size = 15
+text = "Exit"
+metadata/_edit_lock_ = true
+
+[node name="Options" type="Button" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 360.0
+offset_right = 617.0
+offset_bottom = 435.0
+rotation = -0.523599
+theme_override_font_sizes/font_size = 20
+text = "Options"
+metadata/_edit_lock_ = true
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 432.0
+offset_right = 833.0
+offset_bottom = 507.0
+rotation = -0.523599
+theme_override_font_sizes/font_size = 35
+text = "Play"
+metadata/_edit_lock_ = true
+
+[node name="AudioBackground" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamPlaylist_746yy")
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

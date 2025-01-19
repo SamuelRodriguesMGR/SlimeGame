@@ -10,7 +10,7 @@ script = ExtResource("1_0m5cx")
 script = ExtResource("2_7i6jc")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-pixel_size = 0.105
+pixel_size = 0.08
 billboard = 1
 alpha_cut = 1
 texture_filter = 2

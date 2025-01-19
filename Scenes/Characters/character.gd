@@ -22,7 +22,7 @@ func _process(_delta: float) -> void:
 		sprite.flip_h = true
 		
 	if global_position.y < -10 or velocity.length() >= MAX_SPEED:
-		death()
+		kill()
 
 func _physics_process(delta: float) -> void:
 	move_and_slide()
@@ -40,7 +40,10 @@ func move():
 		velocity.z = move_direction3d.z * SPEED 
 	
 	velocity = velocity.limit_length(MAX_SPEED)
-	
-func death():
+
+func kill():
 	state_machine.set_state(state_machine.states.dead)
 	
+func death():
+	GlobalVars.counter_dead += 1
+	queue_free()

@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=3 uid="uid://gl0cckgxtasd"]
+
+[ext_resource type="Script" path="res://Scenes/Levels/level.gd" id="1_qa1wc"]
+[ext_resource type="Script" path="res://Scenes/camera_controller.gd" id="2_f3xec"]
+[ext_resource type="PackedScene" uid="uid://b25tqln826ax7" path="res://Scenes/Characters/Player/player.tscn" id="3_o0eyr"]
+[ext_resource type="PackedScene" uid="uid://dffe3vl8e2t63" path="res://Scenes/UI/ui.tscn" id="4_1l1c7"]
+[ext_resource type="PackedScene" uid="uid://b5520hlpn1e6f" path="res://Scenes/Envinronmet/flag.tscn" id="4_uu3wp"]
+[ext_resource type="PackedScene" uid="uid://dgr8h34y71ucu" path="res://Scenes/Pllatforms/cube.tscn" id="6_6t7h6"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f8ha4"]
+sky_top_color = Color(0, 0.3622, 0.89208, 1)
+sky_horizon_color = Color(1, 1, 1, 1)
+ground_bottom_color = Color(0, 0.29, 0.6, 1)
+ground_horizon_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Sky" id="Sky_j3ryb"]
+sky_material = SubResource("ProceduralSkyMaterial_f8ha4")
+
+[sub_resource type="Environment" id="Environment_5q3xe"]
+background_mode = 2
+sky = SubResource("Sky_j3ryb")
+
+[node name="Level" type="Node3D"]
+script = ExtResource("1_qa1wc")
+
+[node name="UI" parent="." instance=ExtResource("4_1l1c7")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5q3xe")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.642788, -0.541675, 0.541675, 0, 0.707107, 0.707107, -0.766044, -0.45452, 0.454519, 0, 20, 0)
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 1.0
+shadow_opacity = 0.5
+shadow_blur = 2.5
+
+[node name="CameraController" type="Node3D" parent="."]
+top_level = true
+script = ExtResource("2_f3xec")
+
+[node name="CameraTarget" type="Node3D" parent="CameraController"]
+transform = Transform3D(1, 0, 0, 0, 0.866026, 0.5, 0, -0.5, 0.866026, 0, 5, 10)
+
+[node name="Camera3D" type="Camera3D" parent="CameraController/CameraTarget"]
+unique_name_in_owner = true
+
+[node name="Flag" parent="." instance=ExtResource("4_uu3wp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 1.5, 0)
+
+[node name="Player" parent="." instance=ExtResource("3_o0eyr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7145, 1, 3)
+
+[node name="LevelStructure" type="Node3D" parent="."]
+
+[node name="BasePlatform" parent="LevelStructure" instance=ExtResource("6_6t7h6")]
+transform = Transform3D(11, 0, 0, 0, 1, 0, 0, 0, 11, 0, -0.5, 0)
+
+[node name="Cubes" type="Node3D" parent="LevelStructure"]
+
+[node name="Spikes" type="Node3D" parent="LevelStructure"]
