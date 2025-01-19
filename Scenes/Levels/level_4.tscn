@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1b1wbct7lknt"]
+
+[ext_resource type="PackedScene" uid="uid://gl0cckgxtasd" path="res://Scenes/Levels/level.tscn" id="1_pw752"]
+[ext_resource type="PackedScene" uid="uid://dgr8h34y71ucu" path="res://Scenes/Pllatforms/cube.tscn" id="2_tky4g"]
+[ext_resource type="PackedScene" uid="uid://cm05poti5dmbm" path="res://Scenes/Envinronmet/spike.tscn" id="3_i6pvl"]
+
+[node name="Level4" instance=ExtResource("1_pw752")]
+
+[node name="Flag" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.73009, 5.89108, 0)
+
+[node name="Cube2" parent="LevelStructure/Cubes" index="0" instance=ExtResource("2_tky4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.5, 0)
+
+[node name="Cube4" parent="LevelStructure/Cubes" index="1" instance=ExtResource("2_tky4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2.5, 0)
+
+[node name="Cube5" parent="LevelStructure/Cubes" index="2" instance=ExtResource("2_tky4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.01032, 3.18681, 0.00538588)
+
+[node name="Cube6" parent="LevelStructure/Cubes" index="3" instance=ExtResource("2_tky4g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.67831, 3.88296, -0.0863117)
+
+[node name="Cube3" parent="LevelStructure/Cubes" index="4" instance=ExtResource("2_tky4g")]
+
+[node name="Spike3" parent="LevelStructure/Spikes" index="0" instance=ExtResource("3_i6pvl")]
+transform = Transform3D(1, 0, 0, 0, 0.999669, 0.0257408, 0, -0.0257408, 0.999669, 1.06647, 0.40793, 0.0108621)
+
+[node name="Spike4" parent="LevelStructure/Spikes" index="1" instance=ExtResource("3_i6pvl")]
+transform = Transform3D(1, 0, 0, 0, 0.999669, 0.0257408, 0, -0.0257408, 0.999669, 3.06647, 0.40793, 0.0108621)
+
+[node name="Spike5" parent="LevelStructure/Spikes" index="2" instance=ExtResource("3_i6pvl")]
+transform = Transform3D(1, 0, 0, 0, 0.999669, 0.0257408, 0, -0.0257408, 0.999669, 5.06647, 0.40793, 0.0108621)

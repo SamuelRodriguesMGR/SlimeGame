@@ -1,0 +1,255 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1kiqpcs7eto3"]
+
+[ext_resource type="PackedScene" uid="uid://gl0cckgxtasd" path="res://Scenes/Levels/level.tscn" id="1_g8li4"]
+[ext_resource type="PackedScene" uid="uid://dgr8h34y71ucu" path="res://Scenes/Pllatforms/cube.tscn" id="2_o1mac"]
+
+[node name="Level6" instance=ExtResource("1_g8li4")]
+
+[node name="Flag" parent="." index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15, 23.5, 0)
+
+[node name="Player" parent="." index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2855, 1, 4)
+
+[node name="Cube" parent="LevelStructure/Cubes" index="0" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 0)
+
+[node name="Cube2" parent="LevelStructure/Cubes" index="1" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 7.5, 1)
+
+[node name="Cube3" parent="LevelStructure/Cubes" index="2" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7.5, 2)
+
+[node name="Cube4" parent="LevelStructure/Cubes" index="3" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 7.5, 3)
+
+[node name="Cube5" parent="LevelStructure/Cubes" index="4" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7.5, 4)
+
+[node name="Cube6" parent="LevelStructure/Cubes" index="5" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7.5, -4)
+
+[node name="Cube7" parent="LevelStructure/Cubes" index="6" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7.5, -3)
+
+[node name="Cube8" parent="LevelStructure/Cubes" index="7" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7.5, -2)
+
+[node name="Cube9" parent="LevelStructure/Cubes" index="8" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 7.5, -1)
+
+[node name="Cube10" parent="LevelStructure/Cubes" index="9" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 7.5, 1)
+
+[node name="Cube11" parent="LevelStructure/Cubes" index="10" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 2)
+
+[node name="Cube12" parent="LevelStructure/Cubes" index="11" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 7.5, 3)
+
+[node name="Cube13" parent="LevelStructure/Cubes" index="12" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7.5, 4)
+
+[node name="Cube14" parent="LevelStructure/Cubes" index="13" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7.5, -2)
+
+[node name="Cube15" parent="LevelStructure/Cubes" index="14" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7.5, -1)
+
+[node name="Cube16" parent="LevelStructure/Cubes" index="15" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7.5, 0)
+
+[node name="Cube17" parent="LevelStructure/Cubes" index="16" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 7.5, -1)
+
+[node name="Cube18" parent="LevelStructure/Cubes" index="17" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7.5, 0)
+
+[node name="Cube19" parent="LevelStructure/Cubes" index="18" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 7.5, 1)
+
+[node name="Cube20" parent="LevelStructure/Cubes" index="19" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7.5, 2)
+
+[node name="Cube21" parent="LevelStructure/Cubes" index="20" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7.5, -4)
+
+[node name="Cube22" parent="LevelStructure/Cubes" index="21" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 7.5, -3)
+
+[node name="Cube23" parent="LevelStructure/Cubes" index="22" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, -2)
+
+[node name="Cube24" parent="LevelStructure/Cubes" index="23" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7.5, -2)
+
+[node name="Cube25" parent="LevelStructure/Cubes" index="24" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 7.5, -1)
+
+[node name="Cube26" parent="LevelStructure/Cubes" index="25" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7.5, 0)
+
+[node name="Cube27" parent="LevelStructure/Cubes" index="26" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, -4)
+
+[node name="Cube28" parent="LevelStructure/Cubes" index="27" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 7.5, -3)
+
+[node name="Cube29" parent="LevelStructure/Cubes" index="28" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7.5, 2)
+
+[node name="Cube30" parent="LevelStructure/Cubes" index="29" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 7.5, 3)
+
+[node name="Cube31" parent="LevelStructure/Cubes" index="30" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 4)
+
+[node name="Cube32" parent="LevelStructure/Cubes" index="31" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7.5, 0)
+
+[node name="Cube33" parent="LevelStructure/Cubes" index="32" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7.5, 1)
+
+[node name="Cube34" parent="LevelStructure/Cubes" index="33" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 7.5, 3)
+
+[node name="Cube41" parent="LevelStructure/Cubes" index="34" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7.5, 4)
+
+[node name="Cube35" parent="LevelStructure/Cubes" index="35" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 7.5, 4)
+
+[node name="Cube36" parent="LevelStructure/Cubes" index="36" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 7.5, 2)
+
+[node name="Cube37" parent="LevelStructure/Cubes" index="37" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 7.5, -3)
+
+[node name="Cube40" parent="LevelStructure/Cubes" index="38" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7.5, -4)
+
+[node name="Cube38" parent="LevelStructure/Cubes" index="39" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 7.5, -2)
+
+[node name="Cube39" parent="LevelStructure/Cubes" index="40" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 7.5, -4)
+
+[node name="Cube42" parent="LevelStructure/Cubes" index="41" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 13.5, 0)
+
+[node name="Cube43" parent="LevelStructure/Cubes" index="42" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 13.5, 1)
+
+[node name="Cube44" parent="LevelStructure/Cubes" index="43" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 13.5, 2)
+
+[node name="Cube45" parent="LevelStructure/Cubes" index="44" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 13.5, 3)
+
+[node name="Cube47" parent="LevelStructure/Cubes" index="45" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 13.5, -4)
+
+[node name="Cube48" parent="LevelStructure/Cubes" index="46" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13.5, -3)
+
+[node name="Cube49" parent="LevelStructure/Cubes" index="47" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 13.5, -2)
+
+[node name="Cube50" parent="LevelStructure/Cubes" index="48" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.5, -1)
+
+[node name="Cube51" parent="LevelStructure/Cubes" index="49" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.5, 1)
+
+[node name="Cube52" parent="LevelStructure/Cubes" index="50" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 13.5, 2)
+
+[node name="Cube53" parent="LevelStructure/Cubes" index="51" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 13.5, 3)
+
+[node name="Cube54" parent="LevelStructure/Cubes" index="52" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 13.5, 4)
+
+[node name="Cube55" parent="LevelStructure/Cubes" index="53" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 13.5, -2)
+
+[node name="Cube56" parent="LevelStructure/Cubes" index="54" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13.5, -1)
+
+[node name="Cube57" parent="LevelStructure/Cubes" index="55" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 13.5, 0)
+
+[node name="Cube58" parent="LevelStructure/Cubes" index="56" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 13.5, -1)
+
+[node name="Cube59" parent="LevelStructure/Cubes" index="57" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 13.5, 0)
+
+[node name="Cube60" parent="LevelStructure/Cubes" index="58" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 13.5, 1)
+
+[node name="Cube61" parent="LevelStructure/Cubes" index="59" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 13.5, 3)
+
+[node name="Cube62" parent="LevelStructure/Cubes" index="60" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 13.5, -4)
+
+[node name="Cube63" parent="LevelStructure/Cubes" index="61" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.5, -3)
+
+[node name="Cube64" parent="LevelStructure/Cubes" index="62" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 13.5, -2)
+
+[node name="Cube65" parent="LevelStructure/Cubes" index="63" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 13.5, -2)
+
+[node name="Cube66" parent="LevelStructure/Cubes" index="64" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 13.5, -1)
+
+[node name="Cube67" parent="LevelStructure/Cubes" index="65" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 13.5, 1)
+
+[node name="Cube68" parent="LevelStructure/Cubes" index="66" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 13.5, -4)
+
+[node name="Cube69" parent="LevelStructure/Cubes" index="67" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 13.5, -3)
+
+[node name="Cube70" parent="LevelStructure/Cubes" index="68" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 13.5, 2)
+
+[node name="Cube71" parent="LevelStructure/Cubes" index="69" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.5, 3)
+
+[node name="Cube72" parent="LevelStructure/Cubes" index="70" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 13.5, 4)
+
+[node name="Cube73" parent="LevelStructure/Cubes" index="71" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 13.5, 0)
+
+[node name="Cube74" parent="LevelStructure/Cubes" index="72" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13.5, 1)
+
+[node name="Cube75" parent="LevelStructure/Cubes" index="73" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 13.5, 3)
+
+[node name="Cube76" parent="LevelStructure/Cubes" index="74" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 13.5, 4)
+
+[node name="Cube77" parent="LevelStructure/Cubes" index="75" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 13.5, 4)
+
+[node name="Cube78" parent="LevelStructure/Cubes" index="76" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 13.5, 2)
+
+[node name="Cube79" parent="LevelStructure/Cubes" index="77" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 13.5, -3)
+
+[node name="Cube80" parent="LevelStructure/Cubes" index="78" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 13.5, -3)
+
+[node name="Cube81" parent="LevelStructure/Cubes" index="79" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 13.5, -1)
+
+[node name="Cube82" parent="LevelStructure/Cubes" index="80" instance=ExtResource("2_o1mac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 13.5, -4)

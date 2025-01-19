@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5520hlpn1e6f"]
+
+[ext_resource type="Texture2D" uid="uid://3uckogm3e0tr" path="res://Assets/flag.png" id="1_mp4pc"]
+[ext_resource type="Script" path="res://Scenes/Envinronmet/flag.gd" id="1_rgign"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0blm8"]
+size = Vector3(0.5, 4, 0.5)
+
+[node name="Flag" type="Area3D"]
+script = ExtResource("1_rgign")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+offset = Vector2(16.4, 0)
+pixel_size = 0.05
+billboard = 2
+alpha_cut = 1
+texture_filter = 2
+texture = ExtResource("1_mp4pc")
+region_rect = Rect2(0, 0, 10, 10)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.5, 0)
+shape = SubResource("BoxShape3D_0blm8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
